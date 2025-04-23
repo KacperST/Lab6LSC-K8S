@@ -1,0 +1,19 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: copy-content
+spec:
+  template:
+    spec:
+      containers:
+      - name: init
+        image: busybox
+        command: ['sh', '-c', 'echo Hello from NFS > /mnt/data/index.html']
+        volumeMounts:
+        - name: content
+          mountPath: /mnt/data
+      volumes:
+      - name: content
+        persistentVolumeClaim:
+          claimName: web-content-pvc
+      restartPolicy: OnFailure
