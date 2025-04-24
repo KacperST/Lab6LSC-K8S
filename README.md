@@ -1,6 +1,26 @@
 # Lab6LSC-K8S
 
 # Tworzenie klustra:
+eks-cluster.yaml:
+
+```yaml
+apiVersion: eksctl.io/v1alpha5
+kind: ClusterConfig
+
+metadata:
+  name: my-cluster
+  region: us-east-1
+
+iam:
+  serviceRoleARN: arn:aws:iam::160967093664:role/LabRole
+
+nodeGroups:
+  - name: ng-lab
+    instanceType: t3.medium
+    desiredCapacity: 2
+    iam:
+      instanceRoleARN: arn:aws:iam::160967093664:role/LabRole
+```
 
 ## Komenda:
 ``` eksctl create cluster -f eks-cluster.yaml ```
