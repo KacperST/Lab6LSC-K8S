@@ -237,4 +237,4 @@ User -> ELB (LoadBalancer Service) -> nginx Pod (via Deployment) -> Reads from P
 PVC <--> PV
 
 ### Architecture:
-![alt text](images/architexcture.png)
+![alt text](images/architecture.png)
