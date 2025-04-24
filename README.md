@@ -197,28 +197,28 @@ spec:
 ## Web Server
 
 
-![alt text](image.png)
+![alt text](images/image.png)
 
 ## Cluster
 
-![alt text](image-1.png)
-![alt text](image-2.png)
-![alt text](image-3.png)
-![alt text](image-4.png)
-![alt text](image-5.png)
-![alt text](image-6.png)
+![alt text](images/image-1.png)
+![alt text](images/image-2.png)
+![alt text](images/image-3.png)
+![alt text](images/image-4.png)
+![alt text](images/image-5.png)
+![alt text](images/image-6.png)
 
 ## Nodes
-![alt text](image-7.png)
+![alt text](images/image-7.png)
 
 ## Namespaces
-![alt text](image-8.png)
+![alt text](images/image-8.png)
 
 ## Persistent Volumes Claims
-![alt text](image-9.png)
+![alt text](images/image-9.png)
 
 ## Persistent Volumes
-![alt text](image-10.png)
+![alt text](images/image-10.png)
  
 ## How it works:
 
@@ -237,4 +237,4 @@ User -> ELB (LoadBalancer Service) -> nginx Pod (via Deployment) -> Reads from P
 PVC <--> PV
 
 ### Architecture:
-![alt text](architexcture.png)
+![alt text](images/architexcture.png)
